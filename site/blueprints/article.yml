@@ -1,0 +1,46 @@
+title: Article 
+
+pages: false
+
+options: 
+  status: true
+
+fields:
+  title:
+    label: Title
+    type: title
+    
+  intro:
+    label: Intro
+    type: textarea
+    
+  text:
+    label: Text
+    type: textarea
+  
+  image:
+    label: Image
+    type: image
+
+  author:
+    label: Author
+    type: text
+
+  date:
+    label: Date
+    type: date
+    format: MM/DD/YYYY
+
+  tags:
+    label: My Tags
+    type: tags
+    data:
+      - design
+      - architecture
+      - photography
+      - development
+      - web
+  
+  source:
+    label: Source
+    type: url

@@ -1,0 +1,27 @@
+title: Place 
+
+pages: false
+
+fields:
+  name:
+    label: Name
+    type: title
+    
+  text:
+    label: About
+    type: textarea
+
+  image:
+    label: Image
+    type: image
+
+  lat:
+    label: Latitude
+    type: number
+  lng:
+    label: Longitude
+    type: number
+  
+  source:
+    label: Link
+    type: url

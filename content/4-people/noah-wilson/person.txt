@@ -1,0 +1,25 @@
+Name: Noah
+
+----
+
+Text: Hi! My name is Noah and this is a synopsis of who I am and what I do
+
+----
+
+Degree: 
+
+----
+
+Role: Developer
+
+----
+
+Image: capture.png
+
+----
+
+Source: https://people.rit.edu/ntw9049/portfolio/
+
+----
+
+Title: Noah Wilson

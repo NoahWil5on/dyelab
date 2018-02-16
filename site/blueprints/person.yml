@@ -1,0 +1,28 @@
+title: Person 
+
+pages: false
+
+fields:
+  name:
+    label: Name
+    type: title
+    
+  text:
+    label: About
+    type: textarea
+
+  degree: 
+    label: Degree
+    type: text
+
+  role:
+    label: Role
+    type: text
+
+  image:
+    label: Image
+    type: image
+  
+  source:
+    label: Link
+    type: url

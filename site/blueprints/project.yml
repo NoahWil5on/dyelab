@@ -1,0 +1,49 @@
+title: Project 
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type: title
+    
+  abstract:
+    label: Abstract
+    type: textarea
+  
+  image:
+    label: Image
+    type: image
+
+  authors:
+    label: Author(s)
+    type: structure
+    entry:
+      {{name}}<br />
+      {{link}}
+    fields:
+      name:
+        label: Name
+        type: text
+      link:
+        label: Link
+        type: url
+
+  date:
+    label: Date
+    type: date
+    format: MM/DD/YYYY
+
+  tags:
+    label: My Tags
+    type: tags
+    data:
+      - design
+      - architecture
+      - photography
+      - development
+      - web
+  
+  source:
+    label: Source
+    type: url

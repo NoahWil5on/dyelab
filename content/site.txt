@@ -1,0 +1,13 @@
+Title: Dye Lab
+
+----
+
+Author: Tim Dye Team
+
+----
+
+Description: about the site
+
+----
+
+Copyright: 2018

@@ -1,0 +1,13 @@
+Title: About
+
+----
+
+Intro: Just a short intro
+
+----
+
+Text: This is where the meat of the text goes after the intro has hooked you in
+
+----
+
+Image: event-tile_01.png
