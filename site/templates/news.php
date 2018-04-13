@@ -20,10 +20,8 @@
                                 $currentVal += 10;
                             }
 
-                            if($article->image() != null){
-                                $placehold = $article->image()->url();
-                            }else{
-                                $placehold = 'http://placehold.it/1000';
+                            if(!$article->myImage()->empty()){
+                               $placehold = $article->myImage()->toFile()->url();
                             }
 
                             $monthNum  = $article->date('m');
@@ -42,7 +40,7 @@
                                     <p><b><?= $article->author() ?></b> <?= $monthName . ' ' . $day . ', ' . $article->date('Y') ?></p>                                    
                                     <!-- <p>#olute #comnim #sam #lautectem</p> -->
                                     <p class="card-content">
-                                        <?= $article->text() ?>
+                                        <?= $article->text()->kirbytext() ?>
                                     </p>
                                 </div>
                             </div>
@@ -82,7 +80,7 @@
                                     <div class="card-image" style="background-image: url(<?= $placehold ?>)">
                                     </div>
                                     <p class="small-card-title" style="margin-bottom: 5px !important; line-height: 1.05em;"><?= $article->title() ?></p>
-                                    <p style="margin: 0 10px !important;"><?= $article->text() ?> </p>                                    
+                                    <p style="margin: 0 10px !important;"><?= $article->text()->kirbytext() ?> </p>                                    
                                 </div>
                             </div>
                         <?php endif ?>

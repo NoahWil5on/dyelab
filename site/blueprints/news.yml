@@ -2,6 +2,7 @@ title: News
 
 pages:
   num: date
+  sort: flip
   template: article
 
 files: false 

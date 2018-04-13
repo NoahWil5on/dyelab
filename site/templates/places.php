@@ -9,8 +9,8 @@
                 <li onclick="window.location.href = '<?= $place->url() ?>'">
                     <?php
                         $photo = 'https://cdn1.iconfinder.com/data/icons/traveling-2/510/4-512.png';
-                        if( $place->image() != null){
-                            $photo = $place->image()->url();
+                        if(!$place->myImage()->empty()){
+                            $photo = $place->myImage()->toFile()->url();
                         }
                     ?>
                     <div class="place-image" style="background-image: url('<?= $photo ?>')"></div>

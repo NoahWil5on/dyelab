@@ -9,10 +9,10 @@
                     <div class="back-rec">
                     </div>
                     <div class="content">
-                        <?php if($project->image()): ?>
+                        <?php if(!$project->myImage()->empty()): ?>
                         <div class="text-hider">
                         </div>
-                            <div class="research-image" style="background-image: url('<?= $project->image()->url() ?>')" onclick="window.location.href = '<?= $project->image()->url() ?>'">
+                            <div class="research-image" style="background-image: url('<?= $project->myImage()->toFile()->url() ?>')" onclick="window.location.href = '<?= $project->myImage()->toFile()->url() ?>'">
                             </div>
                             <div style="margin-left: 150px; padding-left: 20px" onclick="window.location.href = '<?= $project->url() ?>'">
                         <?php else: ?>
@@ -41,7 +41,7 @@
                             <?php endif ?>
                             <div class="header-abstract">
                                 <p class="abstract">
-                                    <?= $project->abstract() ?>
+                                    <?= $project->abstract()->kirbytext() ?>
                                 </p>
                             </div>
                         </div>

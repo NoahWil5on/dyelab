@@ -12,9 +12,19 @@ fields:
     label: About
     type: textarea
 
-  image:
-    label: Image
+  myImage:
+    label: Main Image
     type: image
+
+  gallery:
+    label: Gallery
+    type: structure
+    entry:
+      {{image}}
+    fields:
+      image:
+        label: Image
+        type: image
 
   lat:
     label: Latitude
@@ -26,6 +36,14 @@ fields:
     type: number
     required: true
   
-  source:
-    label: Link
-    type: url
+  sources:
+    label: Links
+    type: structure
+    entry:
+      {{source}}
+    fields:
+      image:
+        label: Source
+        type: url
+
+  

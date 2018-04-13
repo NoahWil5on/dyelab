@@ -18,7 +18,27 @@ fields:
     type: textarea
     required: true
   
-  image:
-    label: Image
+  myImage:
+    label: Main Image
     type: image
     required: true
+  
+  gallery:
+    label: Gallery
+    type: structure
+    entry:
+      {{image}}
+    fields:
+      image:
+        label: Image
+        type: image
+  
+  sources:
+    label: Relevant Links(Optional)
+    type: structure
+    entry:
+      {{source}}
+    fields:
+      image:
+        label: Source
+        type: url

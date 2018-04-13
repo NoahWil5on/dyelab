@@ -26,12 +26,12 @@ fields:
     type: text
     required: true
 
-  image:
-    label: Image
+  myImage:
+    label: Main Image
     type: image
 
   gallery:
-    label: My Photos
+    label: Gallery
     type: structure
     entry:
       {{image}}
@@ -124,6 +124,12 @@ fields:
     label: My Tags
     type: tags
   
-  source:
-    label: Link to Personal Page
-    type: url
+  sources:
+    label: Link(s) to Personal Page
+    type: structure
+    entry:
+      {{source}}
+    fields:
+      image:
+        label: Source
+        type: url

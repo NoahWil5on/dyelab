@@ -7,8 +7,8 @@
             <div class="content">
             <?php 
                 $photo = 'https://www.sunderland.ac.uk/assets/Upload/Your_Photo.png';
-                if( $page->image() ){
-                    $photo = $page->image()->url();
+                if(!$page->myImage()->empty()){
+                    $photo = $page->myImage()->toFile()->url();
                 }
             ?>
                 <div class="person-image" style="background-image: url('<?= $photo ?>')" onclick="window.location.href = '<?= $photo ?>'">
@@ -16,14 +16,14 @@
                 <div class="person-info-div">
                     <div class="person-info">
                         <h2 class="name"><?= $page->firstName() . ' ' . $page->lastName() ?></h2>
-                        <?php if($page->degree() != ''): ?>
+                        <?php if(!$page->degree()->empty()): ?>
                             <p class="role"><?= $page->degree() ?></p>
                         <?php endif ?>
-                        <?php if($page->role() != ''): ?>
+                        <?php if(!$page->role()->empty()): ?>
                             <p class="role"><?= $page->role() ?></p>
                         <?php endif ?>
-                        <?php if($page->text() != ''): ?>
-                            <p class="origin"><?= $page->text() ?></p>
+                        <?php if(!$page->text()->empty()): ?>
+                            <p class="origin"><?= $page->text()->kirbytext() ?></p>
                         <?php endif ?>
                     </div>
                 </div>
@@ -118,9 +118,7 @@
                 </div>
             </div>
         <?php endif ?>
-        <?php if($page->source() != ''): ?>
-            <button class="link-button" onclick="window.location.href = '<?= $page->source() ?>'">Learn More</button>
-        <?php endif ?>
+        <!-- <button class="link-button" onclick="window.location.href = ''">Learn More</button> -->
     </div>
         
 <?php snippet('footer') ?>

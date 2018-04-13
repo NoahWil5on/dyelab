@@ -23,3 +23,7 @@ Source: http://mzap.org
 ----
 
 Title: Puerto Rico
+
+----
+
+Myimage: treasure-tile_01.png

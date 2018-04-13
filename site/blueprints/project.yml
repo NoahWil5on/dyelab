@@ -13,9 +13,19 @@ fields:
     type: textarea
     required: true
   
-  image:
-    label: Image
+  myImage:
+    label: Main Image
     type: image
+
+  gallery:
+    label: Gallery
+    type: structure
+    entry:
+      {{image}}
+    fields:
+      image:
+        label: Image
+        type: image
 
   authors:
     label: Author(s)
@@ -42,6 +52,12 @@ fields:
     label: My Tags
     type: tags
   
-  source:
-    label: Source
-    type: url
+  sources:
+    label: Sources
+    type: structure
+    entry:
+      {{source}}
+    fields:
+      image:
+        label: Source
+        type: url

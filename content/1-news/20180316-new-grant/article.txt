@@ -6,7 +6,7 @@ Intro:
 
 ----
 
-Text: We just got a new grant Olute comnim sam lautectem am illabor emporepedi dolenis etur, odicaborest ersperecti doles idipidita con et aligentur, unt est, sunt, omnim ulliqua eperitat il eatatur ratemquo que numqui quia conemporum quia velent am, quid magnis eosa que il enimiliberia nonempor raturenisin corror a deritatem es eiunt laborem. Olute comnim sam lautectem am illabor emporepedi dolenis etur, odi
+Text: We just got a new grant Olute comnim sam lautectem am illabor emporepedi dolenis etur, odicaborest ersperecti doles idipidita con et aligentur, unt est, sunt, omnim ulliqua eperitat il eatatur ratemquo que numqui quia conemporum quia velent am, quid magnis eosa que il enimiliberia nonempor raturenisin corror a deritatem es eiunt laborem. Olute comnim sam lautectem am illabor emporepedi dolenis etur, odi (link: http://www.dyelab.org text: this is a link)
 
 ----
 
@@ -27,3 +27,11 @@ Tags: grant,mzap
 ----
 
 Source: https://www.google.com
+
+----
+
+Myimage: mzap.png
+
+----
+
+Gallery: 

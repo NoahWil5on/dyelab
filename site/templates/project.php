@@ -14,8 +14,8 @@
                 <div class="back-rec">
                 </div>
                 <div class="content">
-                    <?php if($page->image() != null): ?>
-                        <div class="content-image" style="background-image: url('<?= $page->image()->url() ?>')" onclick="window.location.href = '<?= $page->image()->url() ?>'">
+                    <?php if(!$page->myImage()->empty()): ?>
+                        <div class="content-image" style="background-image: url('<?= $page->myImage()->toFile()->url() ?>')" onclick="window.location.href = '<?= $page->myImage()->toFile()->url() ?>'">
                         </div>
                     <?php endif ?>
                     <div class="article-info">
@@ -40,14 +40,12 @@
                         <?php endif ?>                       
                     </div>
                     <div class="article-container">
-                        <p class="article-text"><?= $page->abstract() ?></p>
+                        <p class="article-text"><?= $page->abstract()->kirbytext() ?></p>
                         <div style="clear: both"></div>
                     </div>
                 </div>
             </div>
-            <?php if($page->source() != ''): ?>
-                <button class="link-button" onclick="window.location.href = '<?= $page->source() ?>'">Learn More</button>
-            <?php endif ?>
+            <!-- <button class="link-button" onclick="window.location.href = ''">Learn More</button> -->
         </div>
 
 <?php snippet('footer') ?>

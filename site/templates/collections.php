@@ -9,8 +9,8 @@
                 <li onclick="window.location.href = '<?= $person->url() ?>'">
                     <?php
                         $photo = 'https://www.sunderland.ac.uk/assets/Upload/Your_Photo.png';
-                        if( $person->image() ){
-                            $photo = $person->image()->url();
+                        if(!$person->myImage()->empty()){
+                            $photo = $person->myImage()->toFile()->url();
                         }
                     ?>
                     <div class="person-image" style="background-image: url('<?= $photo ?>')"></div>

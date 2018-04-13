@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 <?php 
     $placehold;
-    if($page->image() != null){
-        $placehold = $page->image()->url();
+    if(!$page->myImage()->empty()){
+        $placehold = $page->myImage()->toFile()->url();
     }else{
         $placehold = 'http://placehold.it/1000';
     }
@@ -27,13 +27,13 @@
                         <p><b><?= $page->author() ?></b> <?= $monthName . ' ' . $day . ', ' . $page->date('Y') ?></p>                         
                     </div>
                     <div class="article-container">
-                        <p class="article-text"><?= $page->text() ?></p>
+                        <p class="article-text"><?= $page->text()->kirbytext() ?></p>
                         <div style="clear: both"></div>
                     </div>
                 </div>
             </div>
-            <?php if($page->source() != ''): ?>
-                <button class="link-button" onclick="window.location.href = '<?= $page->source() ?>'">Learn More</button>
+            <?php if(!$page->source()->empty()): ?>
+                <!-- <button class="link-button" onclick="window.location.href = ''">Learn More</button> -->
             <?php endif ?>
         </div>
 

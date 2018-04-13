@@ -11,3 +11,7 @@ Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean turpis era
 ----
 
 Image: santurce.png
+
+----
+
+Myimage: santurce.png
