@@ -1,0 +1,84 @@
+.person-image{
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: top;
+}
+.person-image:hover{
+    cursor: pointer;
+}
+.person-info-div{
+    width: calc(100% - 200px);
+    display: inline-block;
+    font-size: 10pt;
+}
+.person-info{
+    margin: 20px;
+    position: relative;
+}
+.name{
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+.role{
+    font-size: 12pt;
+}
+.origin{
+    margin-top: 20px;
+    font-size: 12pt;
+}
+.about{
+    font-size: 12pt;
+    padding: 20px 100px;
+}
+.info-component{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+    font-size: 10pt;
+}
+.content{
+    font-size: 0 !important;
+    margin: 0 0 !important;
+    text-align: left;
+}
+.back-rec{
+    height: calc(100% - 15px);
+}
+.source-link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.source-link:hover{
+    text-decoration: underline;
+}
+#gallery{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 125px);
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+.gallery-image-div{
+    height: 125px;
+}
+.gallery-image{
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 125px;
+    height: 125px;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(175,255,236);
+}
+.galler-image:hover{
+    cursor: pointer;
+}

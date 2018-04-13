@@ -1,6 +1,7 @@
 title: Research
 
 pages:
+  num: zero
   template: project
 
 files: false 

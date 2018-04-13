@@ -1,0 +1,34 @@
+#component-div ul{
+    margin: 0 auto;
+    font-size: 9pt;
+}
+#component-div li{
+    list-style: none;
+    display: inline-block;
+    color: rgba(51,71,65,1);
+    width: 225px;
+    height: 300px;
+    background-color: white;
+    margin: 0 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: top;
+}
+#component-div li:hover{
+    cursor: pointer;
+}
+.place-image{
+    background-size: cover;
+    background-position: center center;
+    height: 225px;
+}
+.place-info{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.name{
+    font-weight: bold;
+    font-size: 1.5em;
+}

@@ -1,6 +1,11 @@
 title: People
 
 pages:
-  template: person
+  max: 3
+  template: 
+    - collections
+    - students
+    - researchers
+
 
 files: false 

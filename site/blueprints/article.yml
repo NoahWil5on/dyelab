@@ -9,6 +9,7 @@ fields:
   title:
     label: Title
     type: title
+    required: true
     
   intro:
     label: Intro
@@ -17,6 +18,7 @@ fields:
   text:
     label: Text
     type: textarea
+    required: true
   
   image:
     label: Image
@@ -30,6 +32,7 @@ fields:
     label: Date
     type: date
     format: MM/DD/YYYY
+    required: true
 
   tags:
     label: My Tags

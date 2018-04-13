@@ -1,0 +1,21 @@
+.people-content{
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    color: rgba(51,71,65,1);
+}
+.component{
+    text-align: left;
+    margin-bottom: 50px !important;
+}
+.people-link{
+    padding: 40px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+}

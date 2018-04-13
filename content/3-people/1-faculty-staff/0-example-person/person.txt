@@ -1,0 +1,77 @@
+Firstname: Example
+
+----
+
+Lastname: Person
+
+----
+
+Text: This is there example
+
+----
+
+Degree: real degree
+
+----
+
+Role: everything
+
+----
+
+Image: level_02.png
+
+----
+
+Gallery: 
+
+- 
+  image: door.png
+- 
+  image: pause.png
+- 
+  image: sell_tower_pressed.png
+- 
+  image: play.png
+
+----
+
+Projects: 
+
+- 
+  title: Cool Project
+  link: https://www.yahoo.com
+
+----
+
+Publications: 
+
+- 
+  title: publication-this is real
+  link: https://www.youtube.com
+- 
+  title: publication-other
+  link: https://google.com
+
+----
+
+Courses: 
+
+----
+
+Lectures: 
+
+----
+
+Conferences: 
+
+----
+
+Tags: 
+
+----
+
+Source: https://www.google.com
+
+----
+
+Title: Example Person

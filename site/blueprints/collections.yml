@@ -1,0 +1,14 @@
+title: Collections
+
+pages:
+  num: zero
+  template: 
+    - person
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+
+files: false 

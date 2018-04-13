@@ -11,3 +11,7 @@ Description: about the site
 ----
 
 Copyright: 2018
+
+----
+
+Favicon: ms-icon-150x150.png

@@ -1,0 +1,15 @@
+title: Student 
+
+pages:
+  max: 4
+  template: 
+    - collections
+    - researchers
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+
+files: false 

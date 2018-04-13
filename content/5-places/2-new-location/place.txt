@@ -1,0 +1,25 @@
+Name: Made up location
+
+----
+
+Text: yada yada yada
+
+----
+
+Image: 
+
+----
+
+Lat: 12
+
+----
+
+Lng: 23
+
+----
+
+Source: https://google.com
+
+----
+
+Title: New Location

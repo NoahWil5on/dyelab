@@ -3,9 +3,15 @@ title: Person
 pages: false
 
 fields:
-  name:
-    label: Name
+  firstName:
+    label: First Name
     type: title
+    required: true
+
+  lastName:
+    label: Last Name
+    type: title
+    required: true
     
   text:
     label: About
@@ -18,11 +24,106 @@ fields:
   role:
     label: Role
     type: text
+    required: true
 
   image:
     label: Image
     type: image
+
+  gallery:
+    label: My Photos
+    type: structure
+    entry:
+      {{image}}
+    fields:
+      image:
+        label: Image
+        type: image
+
+  projects:
+    label: My Projects
+    type: structure
+    entry:
+      {{title}}<br />
+      {{link}}
+    fields:
+      title:
+        label: Project Title
+        type: title
+        required: true
+      link:
+        label: Link to Project
+        type: url
+        required: true
+
+  publications:
+    label: My Scholarly Publications
+    type: structure
+    entry:
+      {{title}}<br />
+      {{link}}
+    fields:
+      title:
+        label: Publication Title
+        type: title
+        required: true
+      link:
+        label: Link to Publication
+        type: url
+        required: true
+
+  courses:
+    label: My Courses Taught
+    type: structure
+    entry:
+      {{title}}<br />
+      {{link}}
+    fields:
+      title:
+        label: Course Title
+        type: title
+        required: true
+      link:
+        label: Link to Course
+        type: url
+        required: true
+
+  lectures:
+    label: My Lectures
+    type: structure
+    entry:
+      {{title}}<br />
+      {{link}}
+    fields:
+      title:
+        label: Lecture Title
+        type: title
+        required: true
+      link:
+        label: Link to Lecture
+        type: url
+        required: true
+
+  conferences:
+    label: My Conference Presentations
+    type: structure
+    entry:
+      {{title}}<br />
+      {{link}}
+    fields:
+      title:
+        label: Presentation Title
+        type: title
+        required: true
+      link:
+        label: Link to Presentation
+        type: url
+        required: true
+  
+  tags:
+    label: My Tags
+    type: tags
   
   source:
-    label: Link
+    label: Link to Personal Page
     type: url

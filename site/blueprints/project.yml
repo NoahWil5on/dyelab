@@ -6,10 +6,12 @@ fields:
   title:
     label: Title
     type: title
+    required: true
     
   abstract:
     label: Abstract
     type: textarea
+    required: true
   
   image:
     label: Image
@@ -18,6 +20,7 @@ fields:
   authors:
     label: Author(s)
     type: structure
+    required: true
     entry:
       {{name}}<br />
       {{link}}
@@ -33,16 +36,11 @@ fields:
     label: Date
     type: date
     format: MM/DD/YYYY
+    required: true
 
   tags:
     label: My Tags
     type: tags
-    data:
-      - design
-      - architecture
-      - photography
-      - development
-      - web
   
   source:
     label: Source

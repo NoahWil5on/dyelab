@@ -1,0 +1,16 @@
+title: Researcher 
+
+pages: false
+
+files: false
+
+fields:
+  name:
+    label: Name
+    type: title
+    required: true
+  
+  source:
+    label: Link to Personal Page
+    type: url
+    required: true

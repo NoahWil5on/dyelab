@@ -1,0 +1,14 @@
+title: Researchers
+
+pages:
+  num: zero
+  template: 
+    - researcher
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true
+
+files: false 

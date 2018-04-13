@@ -6,15 +6,19 @@ fields:
   title:
     label: Title
     type: title
+    required: true
     
   intro:
     label: Intro
     type: textarea
+    required: true
     
   text:
     label: Text
     type: textarea
+    required: true
   
   image:
     label: Image
     type: image
+    required: true

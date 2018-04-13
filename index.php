@@ -11,6 +11,7 @@ if(file_exists(__DIR__ . DS . 'site.php')) {
 } else {
   $kirby = kirby();
 }
-
+c::set('home', 'news');
+c::set('debug',true);
 // render
 echo $kirby->launch();

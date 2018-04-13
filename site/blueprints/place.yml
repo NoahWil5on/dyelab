@@ -6,6 +6,7 @@ fields:
   name:
     label: Name
     type: title
+    required: true
     
   text:
     label: About
@@ -18,9 +19,12 @@ fields:
   lat:
     label: Latitude
     type: number
+    required: true
+
   lng:
     label: Longitude
     type: number
+    required: true
   
   source:
     label: Link
